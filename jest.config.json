@@ -1,0 +1,37 @@
+{
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coveragePathIgnorePatterns": [
+      "main.ts",
+      "src/config",
+      "src/infrastructure",
+      "<rootDir>/.*.module.ts$",
+      "<rootDir>/.*.index.ts$",
+      "<rootDir>/.*.dto.ts$",
+      "<rootDir>/.*.command.ts$",
+      "<rootDir>/.*.query.ts$",
+      "<rootDir>/.*.entity.ts$",
+      "<rootDir>/.*.enum.ts$"
+    ],
+    "coverageThreshold": {
+      "./src/modules/**/*.ts": {
+        "statements": 90,
+        "branches": 90,
+        "functions": 90,
+        "lines": 90
+      }
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
