@@ -1,4 +1,4 @@
-import { Test, TestingModule } from '@nestjs/testing';
+import { Test } from '@nestjs/testing';
 import { GetCustomerHanlder } from './get-customer.handler';
 import { GetCustomerQuery } from '../impl/get-customer.query';
 import { Repository } from 'typeorm';
