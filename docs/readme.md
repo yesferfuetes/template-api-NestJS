@@ -15,7 +15,7 @@ Para ver el diagrama de arquitectura de la API, haz clic en el siguiente enlace:
 ### Requisitos
 
 - Node.js versión 12.x o superior
-- Base de datos MySQL o compatible
+- Base de datos PostgreSQL
 
 ### Instalación
 
