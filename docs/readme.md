@@ -8,7 +8,7 @@ Esta API está diseñada siguiendo el patrón de arquitectura CQRS (Command Quer
 
 Para ver el diagrama de arquitectura de la API, haz clic en el siguiente enlace:
 
-![Diagrama de Arquitectura](docs/img/architecture_diagram.png)
+[Diagrama de Arquitectura](img/architecture_diagram.png)
 
 ## Configuración
 
