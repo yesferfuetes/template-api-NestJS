@@ -29,7 +29,7 @@ Para ver el diagrama de arquitectura de la API, haz clic en el siguiente enlace:
 
 3. Configurar variables de entorno:
    ```bash
-   Copiar el archivo `.env.example` a `.env` y llenar los detalles requeridos.
+   Copiar el archivo `.env.template` a `.env` y llenar los detalles requeridos.
 
 ### Pruebas
 
