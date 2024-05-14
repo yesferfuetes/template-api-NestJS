@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Esta API está diseñada siguiendo el patrón de arquitectura CQRS (Command Query Responsibility Segregation), aplicando principios de código limpio SOLID y con pruebas unitarias integradas. Este documento detalla los endpoints disponibles, métodos y respuestas esperadas.
+Esta API está diseñada siguiendo el patrón de arquitectura CQRS (Command Query Responsibility Segregation), y orientada hacer un microservicio, aplicando principios de código limpio SOLID y con pruebas unitarias integradas.
 
 ## Diagrama de Arquitectura
 
