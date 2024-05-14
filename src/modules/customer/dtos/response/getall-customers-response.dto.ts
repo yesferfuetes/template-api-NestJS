@@ -1,5 +1,5 @@
 import { GetCustomerResponseDto } from './get-customer-response.dto';
 
-export class GetAllCustomersResponseDto {
+export class GetAllCustomerReponsesDtos {
   customers: GetCustomerResponseDto[];
 }

@@ -2,7 +2,7 @@ import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { GetCustomerQuery } from '../queries/impl/get-customer.query';
 import { GetCustomerResponseDto } from '../dtos/response/get-customer-response.dto';
-import { GetAllCustomersResponseDto } from '../dtos/response/getall-customers-response.dto';
+import { GetAllCustomerReponsesDtos } from '../dtos/response/getall-customers-response.dto';
 import { CreateCustomerRequestDto } from '../dtos/request/create-customer-request.dto';
 import { GetAllCustomersQuery } from '../queries/impl/getall-customer.query';
 import { CreateCustomerCommand } from '../commands/impl/create-customer.command';
@@ -20,7 +20,7 @@ export class CustomerController {
   }
 
   @Get('')
-  async getAllCustomers(): Promise<GetAllCustomersResponseDto> {
+  async getAllCustomers(): Promise<GetAllCustomerReponsesDtos> {
     return await this.queryBus.execute(new GetAllCustomersQuery());
   }
 

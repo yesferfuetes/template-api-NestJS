@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CustomerEntity } from '../../entities/customer.entity';
 import { GetAllCustomersQuery } from '../../queries/impl/getall-customer.query';
 import { InternalServerErrorException } from '@nestjs/common';
-import { GetAllCustomersResponseDto } from '../../dtos/response/getall-customers-response.dto';
+import { GetAllCustomerReponsesDtos } from '../../dtos/response/getall-customers-response.dto';
 import { GetCustomerResponseDto } from '../../dtos/response/get-customer-response.dto';
 
 @QueryHandler(GetAllCustomersQuery)
@@ -18,11 +18,11 @@ export class GetAllCustomersHandler
 
   async execute(
     query: GetAllCustomersQuery,
-  ): Promise<GetAllCustomersResponseDto> {
+  ): Promise<GetAllCustomerReponsesDtos> {
     try {
       const customers = await this.repository.find();
 
-      const responseDto = new GetAllCustomersResponseDto();
+      const responseDto = new GetAllCustomerReponsesDtos();
 
       responseDto.customers = customers.map((customer) => {
         const customerDto = new GetCustomerResponseDto();
