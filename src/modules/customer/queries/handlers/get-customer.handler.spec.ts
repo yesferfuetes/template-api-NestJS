@@ -26,7 +26,7 @@ describe('GetCustomerHanlder', () => {
     const query = new GetCustomerQuery('123');
     mockRepository.findOneBy.mockResolvedValue(null);
 
-    await expect(handler.execute(query)).rejects.toThrowError();
+    await expect(handler.execute(query)).rejects.toThrow();
   });
 
   it('should return customer data when customer is found', async () => {
@@ -68,7 +68,7 @@ describe('GetCustomerHanlder', () => {
     const query = new GetCustomerQuery('123');
     mockRepository.findOneBy.mockRejectedValue(new Error('Error'));
 
-    await expect(handler.execute(query)).rejects.toThrowError();
+    await expect(handler.execute(query)).rejects.toThrow();
   });
 });
 
