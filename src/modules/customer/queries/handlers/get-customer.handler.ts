@@ -29,10 +29,6 @@ export class GetCustomerHanlder implements IQueryHandler<GetCustomerQuery> {
 
       return responseDto;
     } catch (error) {
-      // if (error instanceof NotFoundException) {
-      //   // Re-lanza la misma excepción para preservar el estado HTTP 404
-      //   throw error;
-      // }
       // Cualquier otro tipo de exepcion
       throw new error('An error occurred: ' + error.message);
     }
