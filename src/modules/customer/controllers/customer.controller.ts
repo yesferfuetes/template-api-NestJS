@@ -10,8 +10,8 @@ import { CreateCustomerCommand } from '../commands/impl/create-customer.command'
 @Controller('customers')
 export class CustomerController {
   constructor(
-    private commandBus: CommandBus,
-    private queryBus: QueryBus,
+    private readonly commandBus: CommandBus,
+    private readonly queryBus: QueryBus,
   ) {}
 
   @Get(':id')
